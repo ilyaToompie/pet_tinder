@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pet_tinder/core/home_view.dart';
 import 'package:pet_tinder/core/styles/theme_manager.dart';
-import 'package:pet_tinder/features/pairsearch/representation/pair_search_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,8 +15,8 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeConfig.darkTheme,
       theme: ThemeConfig.lightTheme,
-      themeMode: ThemeMode.dark,
-      home: PairSearchScreen(),
+      themeMode: ThemeMode.light,
+      home: HomeView(),
     );
   }
 }

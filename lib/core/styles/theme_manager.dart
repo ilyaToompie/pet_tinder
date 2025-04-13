@@ -8,6 +8,7 @@ class ThemeConfig {
     brightness: Brightness.light,
     primaryColor: AppColors.primary,
     scaffoldBackgroundColor: AppColors.background1,
+    iconTheme: IconThemeData(color: AppColors.secondary),
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -15,5 +16,6 @@ class ThemeConfig {
     brightness: Brightness.dark,
     primaryColor: AppColors.primary,
     scaffoldBackgroundColor: AppColors.secondary,
+    iconTheme: IconThemeData(color: AppColors.primary),
   );
 }
