@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_tinder/core/pet_card/representation/pet_card.dart';
 
 class PairSearchScreen extends StatelessWidget {
   const PairSearchScreen({super.key});
@@ -12,53 +13,7 @@ class PairSearchScreen extends StatelessWidget {
             const Text('find pair'),
             const SizedBox(height: 20),
             Expanded(
-              child: Stack(
-                alignment: Alignment.center,
-                children: [
-                  Card(
-                    margin: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 40,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Image.network(
-                            'https://cdn.dribbble.com/userupload/5357265/file/original-b0e49c57972aadd8d0bf358d2decaf08.png?resize=752x&vertical=center',
-                            fit: BoxFit.cover,
-                            width: double.infinity,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Loona, 3 years',
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              SizedBox(height: 4),
-                              Text(
-                                'Cheerful and charming',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+              child: Stack(alignment: Alignment.center, children: [PetCard()]),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
