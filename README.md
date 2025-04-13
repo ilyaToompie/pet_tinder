@@ -1,3 +1,3 @@
 # pet_tinder
 
-A new Flutter project.
+my flutter pet project, with spring for backend
